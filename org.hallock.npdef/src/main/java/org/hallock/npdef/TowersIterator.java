@@ -1,7 +1,5 @@
 package org.hallock.npdef;
 
-import org.hallock.npdef.Towers;
-
 public final class TowersIterator {
 	private int numLanes;
 	private int[] positions;

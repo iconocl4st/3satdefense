@@ -2,7 +2,6 @@ package org.hallock.npdef.search;
 
 import java.util.concurrent.TimeUnit;
 
-import org.hallock.npdef.Constants;
 import org.hallock.npdef.Waves;
 
 class SearchTask implements Runnable {

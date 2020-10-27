@@ -9,7 +9,6 @@ import java.awt.Rectangle;
 import java.awt.Stroke;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map.Entry;
@@ -24,6 +23,7 @@ import org.hallock.npdef.Towers.Satisfication;
 import org.hallock.npdef.gui.UiUtil.BoundsResettable;
 
 public class TowersView extends JPanel implements BoundsResettable {
+	private static final long serialVersionUID = 1L;
 	
 	Towers towers;
 	boolean editable;

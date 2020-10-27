@@ -16,6 +16,8 @@ import org.hallock.npdef.gui.WaveAnimator.AnimationListener;
 import org.hallock.npdef.gui.WavesView.WavesListener;
 
 public class GameView extends JPanel implements BoundsResettable, WavesListener, AnimationListener {
+	private static final long serialVersionUID = 1L;
+	
 	Waves waves;
 	WavesView wavesView;
 	TowersView towersView;

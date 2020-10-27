@@ -3,16 +3,13 @@ package org.hallock.npdef.gui;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeListener;
 import java.math.BigInteger;
 import java.util.Random;
 
-import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
-import javax.swing.SwingUtilities;
 
 import org.hallock.npdef.Constants;
 import org.hallock.npdef.Driver;
@@ -21,10 +18,11 @@ import org.hallock.npdef.Waves;
 import org.hallock.npdef.gui.UiUtil.BoundsResettable;
 import org.hallock.npdef.search.DiscreteDistribution;
 import org.hallock.npdef.search.SearchMonitor;
-import org.hallock.npdef.search.WaveSearchResult;
 import org.hallock.npdef.search.WavesSearch;
 
 public class SearchMonitorView extends JPanel implements SearchMonitor, BoundsResettable {
+	private static final long serialVersionUID = 1L;
+
 	Random random;
 	
 	TowersView towersView;
@@ -123,7 +121,7 @@ public class SearchMonitorView extends JPanel implements SearchMonitor, BoundsRe
 
 				new Thread(new Runnable() {
 					public void run() {
-						WaveSearchResult result = WavesSearch.search(
+						WavesSearch.search(
 							view.random,
 							towers, 
 							view

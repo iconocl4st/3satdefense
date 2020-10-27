@@ -31,14 +31,14 @@ public class Driver {
 		frame.setVisible(true);
 	}
 
-	private static void showTowers(Towers towers) {
+	public static void showTowers(Towers towers) {
 		TowersView towersView = TowersView.createView();
 		towersView.setTowers(towers);
 		showView("Towers", towersView, towersView);
 		towersView.setEditable(true);
 	}
 	
-	private static void showWaves(Random random, Towers towers) {
+	public static void showWaves(Random random, Towers towers) {
 		Waves waves = new Waves();
 		waves.randomlySatisfy(random, towers);
 		
@@ -62,7 +62,7 @@ public class Driver {
 		showView(frame, "Game", gameView, gameView);
 	}
 	
-	private static void searchCmdLine(Random random, Towers towers, Waves waves) {
+	public static void searchCmdLine(Random random, Towers towers, Waves waves) {
 		System.out.println("Towers:");
 		System.out.println(towers.toString());
 		

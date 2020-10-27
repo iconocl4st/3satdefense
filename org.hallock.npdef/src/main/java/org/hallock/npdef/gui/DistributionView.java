@@ -14,6 +14,8 @@ import org.hallock.npdef.gui.UiUtil.BoundsResettable;
 import org.hallock.npdef.search.DiscreteDistribution;
 
 public class DistributionView extends JPanel implements BoundsResettable {
+	private static final long serialVersionUID = 1L;
+	
 	private double maxValue = Double.MAX_VALUE;
 	private double minValue = Double.MIN_VALUE;
 	private double[] values;
@@ -46,6 +48,8 @@ public class DistributionView extends JPanel implements BoundsResettable {
 	}
 	
 	private final class DistributionGraph extends JPanel {
+		private static final long serialVersionUID = 1L;
+
 		public void paint(Graphics graphics) {
 			synchronized (sync) {
 				Graphics2D g = (Graphics2D) graphics;

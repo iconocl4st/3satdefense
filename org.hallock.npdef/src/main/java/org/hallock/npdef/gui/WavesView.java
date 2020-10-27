@@ -23,6 +23,8 @@ import org.hallock.npdef.gui.TowersView.TowerListener;
 import org.hallock.npdef.gui.UiUtil.BoundsResettable;
 
 public class WavesView extends JPanel implements BoundsResettable, TowerListener {
+	private static final long serialVersionUID = 1L;
+	
 	Waves waves;
 	Towers towers;
 	
